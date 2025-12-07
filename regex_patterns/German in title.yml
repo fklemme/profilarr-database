@@ -1,0 +1,17 @@
+name: German in title
+pattern: (?i)\bgerman\b
+description: German DL following https://github.com/PCJones/radarr-sonarr-german-dual-language/blob/main/GERMAN_DUAL_LANGUAGE_GUIDE_GER.md#anleitung
+tags:
+- Language
+- German
+tests:
+- expected: true
+  id: 1
+  input: Asterix.erobert.Rom.1976.German.DL.1080p
+  lastRun: '2025-12-07T06:56:23.208876'
+  matchSpan:
+    end: 31
+    start: 25
+  matchedContent: German
+  matchedGroups: []
+  passes: true

@@ -1,0 +1,24 @@
+name: German (no DL)
+description: German DL following https://github.com/PCJones/radarr-sonarr-german-dual-language/blob/main/GERMAN_DUAL_LANGUAGE_GUIDE_GER.md#anleitung
+tags:
+- Language
+- German
+conditions:
+- name: NOT German DL
+  type: release_title
+  required: true
+  negate: true
+  pattern: German DL
+- name: German
+  type: language
+  required: true
+  negate: false
+  language: german
+  exceptLanguage: false
+- name: English
+  type: language
+  required: true
+  negate: true
+  language: english
+  exceptLanguage: false
+tests: []

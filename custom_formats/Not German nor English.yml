@@ -1,0 +1,36 @@
+name: Not German nor English
+description: German DL following https://github.com/PCJones/radarr-sonarr-german-dual-language/blob/main/GERMAN_DUAL_LANGUAGE_GUIDE_GER.md#anleitung
+tags:
+- Language
+- German
+conditions:
+- name: Not German in Title
+  type: release_title
+  required: true
+  negate: true
+  pattern: German in title
+- name: Not German
+  type: language
+  required: true
+  negate: true
+  language: german
+  exceptLanguage: false
+- name: Not English
+  type: language
+  required: true
+  negate: true
+  language: english
+  exceptLanguage: false
+tests:
+- conditionResults:
+  - matches: true
+    name: Not German in Title
+    negate: true
+    pattern: German in title
+    required: true
+    type: release_title
+  expected: false
+  id: 1
+  input: Asterix.erobert.Rom.1976.German.DL.1080p
+  lastRun: '2025-12-07T06:59:48.064575'
+  passes: true

@@ -1,0 +1,24 @@
+name: German DL (by regex)
+description: German DL following https://github.com/PCJones/radarr-sonarr-german-dual-language/blob/main/GERMAN_DUAL_LANGUAGE_GUIDE_GER.md#anleitung
+tags:
+- Language
+- German
+conditions:
+- name: German DL
+  negate: false
+  pattern: German DL
+  required: true
+  type: release_title
+tests:
+- conditionResults:
+  - matches: true
+    name: German DL
+    negate: false
+    pattern: German DL
+    required: true
+    type: release_title
+  expected: true
+  id: 1
+  input: Asterix.erobert.Rom.1976.German.DL.1080p
+  lastRun: '2025-12-07T06:49:16.802350'
+  passes: true
