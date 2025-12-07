@@ -1,5 +1,5 @@
 name: German DL
-pattern: (?i)german\s*\.?dl|(?<=\bGerman\b.*)(?<!\bWEB[-_. ])\bDL\b|\[DE\+[a-z]{2}\]|\[[a-z]{2}\+DE\]|ger,\s*[a-z]{3}\]|\[[a-z]{3}\s*,\s*ger\]
+pattern: german\s*\.?dl|(?<=\bGerman\b.*)(?<!\bWEB[-_. ])\bDL\b|\[DE\+[a-z]{2}\]|\[[a-z]{2}\+DE\]|ger,\s*[a-z]{3}\]|\[[a-z]{3}\s*,\s*ger\]
 description: German DL following https://github.com/PCJones/radarr-sonarr-german-dual-language/blob/main/GERMAN_DUAL_LANGUAGE_GUIDE_GER.md#anleitung
 tags:
 - Language
