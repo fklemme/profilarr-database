@@ -1,14 +1,5 @@
-name: 2160p Quality
-description: '2160p Quality utilizes the [**Encode Efficiency Index**](https://dictionarry.dev/wiki/eei)
-  metric at a 55% target ratio to prioritize **transparent** x265 4k encodes
-
-
-  - 2160p Blurays
-
-  - Fallbacks in Place for Proper Quality Progression
-
-  - 2160p Bluray > 2160p WEB-DL > 1080p Bluray > 1080p WEB-DL > 720p Bluray > 720p
-  WEB-DL > 480p WEB-DL > DVD'
+name: 2160p Quality English
+description: Based on 2160p Quality profile
 tags:
 - 2160p
 - Quality Focused
