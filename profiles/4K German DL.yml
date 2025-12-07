@@ -26,9 +26,9 @@ custom_formats:
   score: 280000
 - name: 720p WEB-DL
   score: 240000
-- name: German DL (by regex)
+- name: German DL regex
   score: 200000
-- name: German DL (by tags)
+- name: German DL tags
   score: 200000
 - name: 720p Bluray
   score: 180000
