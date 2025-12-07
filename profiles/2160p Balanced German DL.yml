@@ -1,4 +1,4 @@
-name: 4K German DL
+name: 2160p Balanced German DL
 description: Based on 2160p Balanced profile
 tags:
 - 2160p
@@ -25,7 +25,7 @@ custom_formats:
 - name: 1080p WEB-DL
   score: 380000
 - name: German (no DL)
-  score: 300000
+  score: 350000
 - name: 1080p Bluray
   score: 280000
 - name: 1080p WEBRip
@@ -279,7 +279,7 @@ custom_formats_sonarr:
 qualities:
 - id: -1
   name: Merged Formats
-  description: Merged for German DL so that language is not dominated by format.
+  description: Merged for German DL so that language is not dominated by video format.
   qualities:
   - id: 4
     name: Bluray-2160p
@@ -308,5 +308,5 @@ qualities:
 upgrade_until:
   id: -1
   name: Merged Formats
-  description: Merged for German DL so that language is not dominated by format.
+  description: Merged for German DL so that language is not dominated by video format.
 language: any
