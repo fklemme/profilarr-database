@@ -34,6 +34,8 @@ custom_formats:
   score: 180000
 - name: 720p WEBRip
   score: 180000
+- name: German (no DL)
+  score: 150000
 - name: 1080p Quality Tier 1
   score: 125000
 - name: 1080p Quality Tier 2
@@ -49,8 +51,6 @@ custom_formats:
 - name: 576p Bluray
   score: 120000
 - name: 1080p Balanced Tier 1
-  score: 100000
-- name: German (no DL)
   score: 100000
 - name: 720p Quality Tier 1
   score: 85000
