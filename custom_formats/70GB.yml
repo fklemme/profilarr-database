@@ -1,0 +1,14 @@
+name: 70GB
+description: 70GB or less
+tags:
+- Size
+conditions:
+- maxSize: '70'
+  maxSizeUnit: GB
+  minSize: '0'
+  minSizeUnit: GB
+  name: 70GB
+  negate: false
+  required: true
+  type: size
+tests: []

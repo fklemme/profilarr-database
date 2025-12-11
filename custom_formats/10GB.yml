@@ -1,0 +1,14 @@
+name: 10GB
+description: 10GB or less
+tags:
+- Size
+conditions:
+- name: 10GB
+  type: size
+  required: true
+  negate: false
+  minSize: '0'
+  maxSize: '10'
+  minSizeUnit: GB
+  maxSizeUnit: GB
+tests: []

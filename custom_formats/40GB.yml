@@ -1,0 +1,14 @@
+name: 40GB
+description: 40GB or less
+tags:
+- Size
+conditions:
+- maxSize: '40'
+  maxSizeUnit: GB
+  minSize: '0'
+  minSizeUnit: GB
+  name: 40GB
+  negate: false
+  required: true
+  type: size
+tests: []
