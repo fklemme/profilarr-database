@@ -67,6 +67,8 @@ custom_formats:
 - name: 576p Bluray
   score: 120000
 - name: 1080p Balanced Tier 1
+  score: 101000
+- name: 1080p Balanced Tier 2
   score: 100000
 - name: 720p Quality Tier 1
   score: 85000
@@ -111,12 +113,14 @@ custom_formats:
 - name: SD Quality Tier 2
   score: 10000
 - name: 2160p
-  score: 5000
+  score: 50000
 - name: Dolby Vision
   score: 3000
 - name: 1080p
-  score: 2000
+  score: 20000
 - name: AMZN
+  score: 2000
+- name: ATVP
   score: 2000
 - name: HDR10+
   score: 2000
@@ -129,8 +133,8 @@ custom_formats:
 - name: TrueHD (Missing)
   score: 1200
 - name: 720p
-  score: 1000
-- name: ATV
+  score: 10000
+- name: Amazon Enhancement
   score: 1000
 - name: HDR
   score: 1000
@@ -196,9 +200,13 @@ custom_formats:
   score: 0
 - name: CRAV
   score: 0
+- name: CRIT
+  score: 0
 - name: HTSR
   score: 0
 - name: HULU
+  score: 0
+- name: MUBI
   score: 0
 - name: NOW
   score: 0
@@ -213,23 +221,23 @@ custom_formats:
 - name: STAN
   score: 0
 - name: 20-30GB
-  score: -20
+  score: -200
 - name: 30-40GB
-  score: -30
+  score: -300
 - name: 40-50GB
-  score: -40
+  score: -400
 - name: 50-60GB
-  score: -50
+  score: -500
 - name: 60-70GB
-  score: -60
+  score: -600
 - name: 70-80GB
-  score: -70
+  score: -700
 - name: 80-90GB
-  score: -80
+  score: -800
 - name: 90-100GB
-  score: -90
+  score: -900
 - name: 100GB+
-  score: -100
+  score: -1000
 - name: x265 (Bluray)
   score: -400000
 - name: Not German nor English
@@ -271,28 +279,26 @@ custom_formats_radarr:
   score: 462000
 - name: MA
   score: 6000
-- name: ATVP
-  score: 4000
 - name: DSNP
   score: 4000
 - name: iT
   score: 4000
-- name: Amazon Enhancement
-  score: 2000
 - name: HMAX
   score: 2000
 - name: MAX
   score: 2000
 - name: Better Theatricals
   score: 1000
-- name: CRIT
-  score: 1000
 - name: Special Edition
   score: 1000
 - name: 10-20GB
   score: 0
 - name: 0-10GB
-  score: -10
+  score: -100
+- name: Disney+ Enhancement
+  score: -1000
+- name: Movies Anywhere Enhancement
+  score: -2000
 - name: iTunes Enhancement
   score: -3000
 - name: 3D
@@ -310,16 +316,12 @@ custom_formats_radarr:
 custom_formats_sonarr:
 - name: 2160p Balanced Tier 1
   score: 464000
-- name: ATVP
-  score: 3000
 - name: DSNP
   score: 3000
 - name: HMAX
   score: 3000
 - name: MAX
   score: 3000
-- name: Amazon Enhancement
-  score: 1000
 - name: iT
   score: 1000
 - name: Season Pack
@@ -327,7 +329,7 @@ custom_formats_sonarr:
 - name: 0-10GB
   score: 0
 - name: 10-20GB
-  score: -10
+  score: -100
 - name: HBO Max Enhancement
   score: -1000
 - name: TV Extras
@@ -345,40 +347,40 @@ qualities:
     name: Bluray-2160p
   - id: 5
     name: WEBDL-2160p
+  - id: 6
+    name: WEBRip-2160p
+  - id: 7
+    name: HDTV-2160p
   - id: 8
     name: Remux-1080p
-  - id: 10
-    name: Bluray-1080p
   - id: 9
     name: WEBDL-1080p
+  - id: 10
+    name: Bluray-1080p
   - id: 11
     name: WEBRip-1080p
+  - id: 12
+    name: HDTV-1080p
   - id: 13
     name: Bluray-720p
   - id: 14
     name: WEBDL-720p
   - id: 15
     name: WEBRip-720p
+  - id: 16
+    name: HDTV-720p
   - id: 17
     name: Bluray-576p
   - id: 18
     name: Bluray-480p
   - id: 19
     name: WEBDL-480p
-  - id: 22
-    name: DVD
-  - id: 6
-    name: WEBRip-2160p
-  - id: 7
-    name: HDTV-2160p
-  - id: 12
-    name: HDTV-1080p
-  - id: 16
-    name: HDTV-720p
   - id: 20
     name: WEBRip-480p
   - id: 21
     name: DVD-R
+  - id: 22
+    name: DVD
   - id: 24
     name: SDTV
 upgrade_until:
