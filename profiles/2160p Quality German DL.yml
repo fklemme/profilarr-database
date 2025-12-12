@@ -164,32 +164,16 @@ custom_formats:
   score: 300
 - name: AAC
   score: 200
-- name: 80GB
-  score: 100
 - name: WEB-DL Tier 1
   score: 100
-- name: 70GB
-  score: 90
-- name: 60GB
-  score: 80
 - name: WEB-DL Tier 2
   score: 80
-- name: 50GB
-  score: 70
-- name: 40GB
-  score: 60
 - name: WEB-DL Tier 3
   score: 60
-- name: 30GB
-  score: 50
 - name: WEB-DL Tier 4
   score: 40
-- name: 20GB
-  score: 25
 - name: WEB-DL Tier 5
   score: 20
-- name: 10GB
-  score: 10
 - name: Repack3
   score: 8
 - name: Repack2
@@ -216,6 +200,24 @@ custom_formats:
   score: 0
 - name: STAN
   score: 0
+- name: 20-30GB
+  score: -20
+- name: 30-40GB
+  score: -30
+- name: 40-50GB
+  score: -40
+- name: 50-60GB
+  score: -50
+- name: 60-70GB
+  score: -60
+- name: 70-80GB
+  score: -70
+- name: 80-90GB
+  score: -80
+- name: 90-100GB
+  score: -90
+- name: 100GB+
+  score: -100
 - name: x265 (Bluray)
   score: -400000
 - name: Not German nor English
@@ -273,6 +275,10 @@ custom_formats_radarr:
   score: 1000
 - name: Special Edition
   score: 1000
+- name: 10-20GB
+  score: 0
+- name: 0-10GB
+  score: -10
 - name: iTunes Enhancement
   score: -3000
 - name: 3D
@@ -306,6 +312,10 @@ custom_formats_sonarr:
   score: 1000
 - name: Season Pack
   score: 10
+- name: 0-10GB
+  score: 0
+- name: 10-20GB
+  score: -10
 - name: HBO Max Enhancement
   score: -1000
 - name: Remux (Source)

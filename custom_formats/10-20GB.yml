@@ -1,5 +1,5 @@
-name: 20GB
-description: 20GB or less
+name: 10-20GB
+description: 10-20GB
 tags:
 - Size
 conditions:
@@ -11,4 +11,12 @@ conditions:
   negate: false
   required: true
   type: size
+- name: 10GB
+  type: size
+  required: true
+  negate: true
+  minSize: '0'
+  maxSize: '10'
+  minSizeUnit: GB
+  maxSizeUnit: GB
 tests: []

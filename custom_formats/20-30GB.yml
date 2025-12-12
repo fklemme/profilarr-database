@@ -1,0 +1,22 @@
+name: 20-30GB
+description: 20-30GB
+tags:
+- Size
+conditions:
+- maxSize: '30'
+  maxSizeUnit: GB
+  minSize: '0'
+  minSizeUnit: GB
+  name: 30GB
+  negate: false
+  required: true
+  type: size
+- name: 20GB
+  type: size
+  required: true
+  negate: true
+  minSize: '0'
+  maxSize: '20'
+  minSizeUnit: GB
+  maxSizeUnit: GB
+tests: []

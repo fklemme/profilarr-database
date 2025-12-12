@@ -1,0 +1,22 @@
+name: 90-100GB
+description: 90-100GB
+tags:
+- Size
+conditions:
+- maxSize: '100'
+  maxSizeUnit: GB
+  minSize: '0'
+  minSizeUnit: GB
+  name: 100GB
+  negate: false
+  required: true
+  type: size
+- maxSize: '90'
+  maxSizeUnit: GB
+  minSize: '0'
+  minSizeUnit: GB
+  name: 90GB
+  negate: true
+  required: true
+  type: size
+tests: []

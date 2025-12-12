@@ -1,14 +1,14 @@
-name: 80GB
-description: 80GB or less
+name: 100GB+
+description: 100GB+
 tags:
 - Size
 conditions:
-- maxSize: '80'
+- maxSize: '100'
   maxSizeUnit: GB
   minSize: '0'
   minSizeUnit: GB
-  name: 80GB
-  negate: false
+  name: 100GB
+  negate: true
   required: true
   type: size
 tests: []

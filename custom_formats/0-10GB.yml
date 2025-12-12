@@ -1,13 +1,13 @@
-name: 30GB
-description: 30GB or less
+name: 0-10GB
+description: 0-10GB
 tags:
 - Size
 conditions:
-- maxSize: '30'
+- maxSize: '10'
   maxSizeUnit: GB
   minSize: '0'
   minSizeUnit: GB
-  name: 30GB
+  name: 10GB
   negate: false
   required: true
   type: size
